@@ -1,0 +1,24 @@
+.headerSection {
+  background-color: var(--badges);  
+}
+
+.headerContainer {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigationMenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #101828;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}

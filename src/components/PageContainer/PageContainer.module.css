@@ -1,0 +1,6 @@
+.pageWrapper {
+  margin: 0 auto;
+  padding: 48px 64px;
+  min-width: 320px;
+  max-width: 1440px;
+}

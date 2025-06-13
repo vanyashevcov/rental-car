@@ -1,0 +1,115 @@
+.cardContainer {
+  width: 276px;
+  display: flex;
+  flex-direction: column;
+}
+
+.carImage {
+  width: 276px;
+  height: 268px;
+  border-radius: 14px;
+  margin-bottom: 16px;
+  object-fit: cover;
+}
+
+.cardDetails {
+  margin-bottom: 28px;
+}
+
+.titleSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--main);
+  margin-bottom: 8px;
+}
+
+.modelHighlight {
+  color: var(--button);
+}
+
+.infoSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.infoRow {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+}
+
+.infoRow > li {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--gray);
+  line-height: 1.33;
+  padding-right: 6px;
+  border-right: 1px solid var(--gray);
+}
+
+.infoRow > li:last-child {
+  border-right: none;
+  padding-right: 0;
+}
+
+.imageWrapper {
+  position: relative;
+}
+
+.favoriteButton {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 50%;
+  transition: background-color var(--animation-duration);
+}
+
+.favoriteButton:hover,
+.favoriteButton:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.favoriteIcon {
+  width: 16px;
+  height: 16px;
+  stroke: var(--white);
+  fill: none;
+}
+
+.favoriteIconActive {
+  composes: favoriteIcon;
+  stroke: var(--button);
+  fill: var(--button);
+}
+
+.readMoreButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  width: 276px;
+  height: 44px;
+  background-color: var(--button);
+  color: var(--white);
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  border: none;
+  cursor: pointer;
+  transition: background-color var(--animation-duration);
+}
+
+.readMoreButton:hover,
+.readMoreButton:focus {
+  background-color: var(--button-hover);
+}

@@ -1,0 +1,20 @@
+.detailsContainer {
+  display: flex;
+  gap: 72px;
+  padding-top: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.leftColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.carImage {
+  width: 640px;
+  height: 512px;
+  border-radius: 19px;
+  object-fit: cover;
+  margin-bottom: 40px;
+}

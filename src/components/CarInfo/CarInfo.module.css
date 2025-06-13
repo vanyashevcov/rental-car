@@ -1,0 +1,137 @@
+.infoContainer {
+  width: 488px;
+  font-family: var(--font-family);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+.carTitle {
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33333;
+  text-align: center;
+  color: #101828;
+  margin: 0;
+}
+
+.carId {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  color: var(--gray);
+}
+
+.locationPrice {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  color: var(--main);
+}
+
+.locationInfo {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.locationIcon {
+  width: 16px;
+  height: 16px;
+  stroke: var(--main);
+  fill: none;
+}
+
+.priceDisplay {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--button);
+  margin-bottom: 24px;
+}
+
+.description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  color: var(--main);
+  margin-bottom: 44px;
+}
+
+.section {
+  margin-bottom: 44px;
+}
+
+.section:last-child {
+  margin-bottom: 0;
+}
+
+.sectionTitle {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--main);
+  margin: 0 0 24px 0;
+}
+
+.conditionsList,
+.featuresList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.conditionItem,
+.featureItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  color: var(--main);
+}
+
+.checkIcon {
+  width: 16px;
+  height: 16px;
+  stroke: var(--button);
+  fill: none;
+  flex-shrink: 0;
+}
+
+.specsList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.specItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  color: var(--main);
+}
+
+.specIcon {
+  width: 16px;
+  height: 16px;
+  stroke: var(--main);
+  fill: none;
+  flex-shrink: 0;
+}

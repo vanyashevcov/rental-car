@@ -1,0 +1,105 @@
+.formContainer {
+  padding: 44px 57px;
+  border: 1px solid var(--gray-light);
+  border-radius: 10px;
+  width: 640px;
+  font-family: var(--font-family);
+}
+
+.bookingForm {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.formHeading {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--main);
+  margin: 0 0 8px 0;
+}
+
+.formDescription {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  color: var(--gray);
+  margin: 0 0 24px 0;
+}
+
+.inputGroup {
+  width: 100%;
+  position: relative;
+}
+
+.inputField {
+  height: 56px;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid var(--gray-light);
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  background-color: var(--inputs);
+  color: var(--main);
+  padding: 18px;
+  outline: none;
+  transition: border-color var(--animation-duration);
+}
+
+.inputField::placeholder {
+  color: var(--gray);
+}
+
+.inputField:focus,
+.inputField:hover {
+  border-color: var(--gray-light);
+}
+
+.inputError {
+  border-color: #ff4444;
+}
+
+.textareaField {
+  composes: inputField;
+  resize: none;
+  height: 114px;
+  padding-top: 18px;
+}
+
+.errorMessage {
+  color: #ff4444;
+  font-size: 12px;
+  margin-top: 4px;
+  position: absolute;
+  left: 0;
+  bottom: -18px;
+}
+
+.submitButton {
+  background-color: var(--button);
+  color: var(--white);
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  border: none;
+  width: 166px;
+  height: 56px;
+  border-radius: 200px;
+  transition: background-color var(--animation-duration);
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.submitButton:hover,
+.submitButton:focus {
+  background-color: var(--button-hover);
+}
+
+.submitButton:disabled {
+  background-color: var(--gray);
+  cursor: not-allowed;
+}

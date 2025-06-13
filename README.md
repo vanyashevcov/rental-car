@@ -1,12 +1,53 @@
-# React + Vite
+🚗 RentalCar Frontend
+A responsive frontend web application for RentalCar, a car rental service. The app allows users to browse available vehicles, filter by various criteria, add favorites, and submit rental requests through a dedicated form.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🔍 Overview
+This project is built with React and powered by a ready-to-use backend API for managing rental listings. It includes a homepage, a catalog of cars with filters and pagination, and a detailed car page with a booking form.
 
-Currently, two official plugins are available:
+📚 API Docs: https://car-rental-api.goit.global/api-docs/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🧰 Tech Stack
 
-## Expanding the ESLint configuration
+- React + Vite
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Redux Toolkit
+
+- React Router
+
+- Axios
+
+- CSS Modules
+
+- Deployed on Vercel 
+
+📦 Installation
+Clone the repo:
+
+git clone https://github.com/vanyashevcov/rental-car.git
+cd rental-car
+
+Install dependencies:
+
+npm install
+
+Start development server:
+
+npm run dev
+
+Build for production:
+
+npm run build
+
+🔗 Routes
+
+/ — Home
+
+/catalog — Vehicle Catalog
+
+/catalog/:id — Single Camper Page
+
+👤 Author
+
+Created by Ivan Shetvsov
+
+🔗 (https://www.linkedin.com/in/ivan-shevtsov-9abb8a1b9/)
