@@ -1,7 +1,7 @@
-import styles from './PageContainer.module.css';
+import s from './PageContainer.module.css';
 
 function PageContainer({ children }) {
-  return <div className={styles.pageWrapper}>{children}</div>;
+  return <div className={s.pageWrapper}>{children}</div>;
 }
 
 export default PageContainer;

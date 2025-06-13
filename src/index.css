@@ -1,5 +1,5 @@
 :root {
-  --font-family: 'Inter', sans-serif;
+  --font-family: 'Manrope', sans-serif;
   --main: #101828;
   --gray: #8d929a;
   --gray-light: #dadde1;
@@ -61,7 +61,6 @@ button {
   font-family: inherit;
 }
 
-/* Custom Scrollbar Styles */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -80,13 +79,11 @@ button {
   background: #c1c5cc;
 }
 
-/* Firefox scrollbar */
 * {
   scrollbar-width: thin;
   scrollbar-color: #dadde1 transparent;
 }
 
-/* Navigation Link Styles */
 .navigationLink {
   font-size: 16px;
   font-weight: 500;
@@ -105,7 +102,6 @@ button {
   color: var(--button-hover);
 }
 
-/* Date Picker Styles */
 .react-datepicker-wrapper {
   width: 100%;
 }
@@ -113,6 +109,16 @@ button {
 .react-datepicker {
   border: 1px solid var(--button) !important;
   font-family: var(--font-family) !important;
+  border-radius: 12px !important;
+}
+
+.react-datepicker__current-month {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  color: #101828;
 }
 
 .react-datepicker__month-container {
@@ -120,6 +126,7 @@ button {
 }
 
 .react-datepicker__header {
+  border-radius: 12px 12px 0 0 !important;
   background-color: var(--white) !important;
   border-bottom: 1px solid var(--button) !important;
 }
@@ -130,6 +137,35 @@ button {
 
 .react-datepicker__day-name {
   color: var(--gray) !important;
+  text-transform: uppercase !important;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.2;
+  text-align: center;
+  color: #8d929a;
+}
+
+.react-datepicker__navigation-icon {
+  width: 9px !important;
+  height: 16px !important;
+}
+
+.react-datepicker__day {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  text-align: center;
+  color: #101828;
+}
+
+.react-datepicker__day--outside-month {
+  color: #8d929a;
+}
+
+.react-datepicker__navigation--nex {
+
 }
 
 .react-datepicker__day--selected,
@@ -159,7 +195,6 @@ button {
   color: var(--gray-light) !important;
 }
 
-/* Dropdown Animation */
 @keyframes slideDown {
   0% {
     opacity: 0;
@@ -180,9 +215,4 @@ button {
     opacity: 0;
     transform: translateY(-10px) scaleY(0.8);
   }
-}
-
-/* React Select Menu Animation */
-.css-26l3qy-menu {
-  animation: slideDown 0.3s ease-out !important;
 }

@@ -1,7 +1,7 @@
 import { forwardRef } from 'react';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
-import styles from './Calendar.module.css';
+import s from './Calendar.module.css';
 
 const CustomDateInput = forwardRef(function Calendar(
   { onClick, placeholder, value },
@@ -9,7 +9,7 @@ const CustomDateInput = forwardRef(function Calendar(
 ) {
   return (
     <button
-      className={styles.dateInputButton}
+      className={s.dateInputButton}
       onClick={onClick}
       ref={ref}
       type="button"
@@ -34,7 +34,7 @@ const Calendar = ({ value, onChange }) => {
       weekStartsOn={1}
       calendarStartDay={1}
       showPopperArrow={false}
-      placeholderText="Select rental date"
+      placeholderText="Booking date"
     />
   );
 };

@@ -18,16 +18,11 @@ const formValidationRules = Yup.object({
   customerEmail: Yup.string()
     .email('Invalid email address')
     .required('Email is required'),
-  rentalDate: Yup.date()
-    .nullable()
-    .required('Rental date is required')
-    .min(new Date(), 'Rental date cannot be in the past'),
 });
 
 function BookingForm() {
   const handleFormSubmission = (values, { resetForm }) => {
     if (!values) return;
-    
     console.log('Booking request submitted:', values);
     resetForm();
     toast.success('Car booked successfully!');
@@ -44,7 +39,7 @@ function BookingForm() {
         validationSchema={formValidationRules}
         onSubmit={handleFormSubmission}
       >
-        {({ setFieldValue, values, dirty, errors, touched }) => (
+        {({ setFieldValue, values, errors, touched }) => (
           <Form className={s.bookingForm}>
             <div className={s.inputGroup}>
               <Field
@@ -75,9 +70,6 @@ function BookingForm() {
                 value={values.rentalDate}
                 onChange={date => setFieldValue('rentalDate', date)}
               />
-              {errors.rentalDate && touched.rentalDate && (
-                <div className={s.errorMessage}>{errors.rentalDate}</div>
-              )}
             </div>
             
             <Field
@@ -87,7 +79,7 @@ function BookingForm() {
               className={s.textareaField}
             />
             
-            <button className={s.submitButton} type="submit" disabled={!dirty}>
+            <button className={s.submitButton} type="submit" >
               Send
             </button>
           </Form>

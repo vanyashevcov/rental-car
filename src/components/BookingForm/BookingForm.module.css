@@ -1,28 +1,29 @@
 .formContainer {
-  padding: 44px 57px;
+  font-family: var(--font-family);
+  width: 640px;
+  padding: 32px;
   border: 1px solid var(--gray-light);
   border-radius: 10px;
-  width: 640px;
-  font-family: var(--font-family);
+  margin-bottom: 40px;
 }
 
 .bookingForm {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 16px;
 }
 
 .formHeading {
-  font-size: 20px;
   font-weight: 600;
-  line-height: 1.25;
+  font-size: 20px;
+  line-height: 1.2;
   color: var(--main);
   margin: 0 0 8px 0;
 }
 
 .formDescription {
+  font-weight: 500;
   font-size: 16px;
-  font-weight: 400;
   line-height: 1.25;
   color: var(--gray);
   margin: 0 0 24px 0;
@@ -34,28 +35,22 @@
 }
 
 .inputField {
-  height: 56px;
   width: 100%;
-  border-radius: 10px;
-  border: 1px solid var(--gray-light);
+  height: 48px;
+  border-radius: 12px;
+  border: none;
   font-family: var(--font-family);
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.25;
   background-color: var(--inputs);
   color: var(--main);
-  padding: 18px;
+  padding: 14px 20px;
   outline: none;
-  transition: border-color var(--animation-duration);
 }
 
 .inputField::placeholder {
   color: var(--gray);
-}
-
-.inputField:focus,
-.inputField:hover {
-  border-color: var(--gray-light);
 }
 
 .inputError {
@@ -82,16 +77,17 @@
   background-color: var(--button);
   color: var(--white);
   font-family: var(--font-family);
-  font-weight: 500;
+  font-weight: 600;
   font-size: 16px;
   line-height: 1.25;
   border: none;
   width: 166px;
-  height: 56px;
-  border-radius: 200px;
+  height: 44px;
+  border-radius: 12px;
   transition: background-color var(--animation-duration);
   cursor: pointer;
-  margin-top: 10px;
+  margin-top: 24px;
+  margin: 0 auto;
 }
 
 .submitButton:hover,

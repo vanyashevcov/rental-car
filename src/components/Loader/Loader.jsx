@@ -1,13 +1,13 @@
-import styles from './Loader.module.css';
+import s from './Loader.module.css';
 
 export default function Loader() {
   return (
-    <div className={styles.spinnerContainer}>
-      <div className={styles.spinner}>
-        <div className={styles.spinnerRing}></div>
-        <div className={styles.spinnerRing}></div>
-        <div className={styles.spinnerRing}></div>
-        <div className={styles.spinnerRing}></div>
+    <div className={s.spinnerContainer}>
+      <div className={s.spinner}>
+        <div className={s.spinnerRing}></div>
+        <div className={s.spinnerRing}></div>
+        <div className={s.spinnerRing}></div>
+        <div className={s.spinnerRing}></div>
       </div>
     </div>
   );
