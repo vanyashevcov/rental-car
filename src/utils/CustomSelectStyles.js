@@ -1,5 +1,5 @@
 export const customSelectStyles = {
-  control: (base, state) => ({
+  control: (base) => ({
     ...base,
     backgroundColor: '#F7F7F7',
     borderRadius: '12px',
@@ -25,7 +25,7 @@ export const customSelectStyles = {
     },
     '&:focus-within': {
       border: 'none',
-    }
+    },
   }),
   option: (base, state) => ({
     ...base,
@@ -104,5 +104,13 @@ export const customSelectStyles = {
     display: 'flex',
     alignItems: 'center',
     padding: '0',
+  }),
+  input: base => ({
+    ...base,
+    caretColor: 'transparent',
+    cursor: 'pointer',
+    '& input': {
+      cursor: 'pointer !important',
+    },
   }),
 };

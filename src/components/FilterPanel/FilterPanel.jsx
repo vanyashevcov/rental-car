@@ -53,7 +53,7 @@ function FilterPanel({ availableBrands }) {
         onSubmit={handleFilterSubmit}
         enableReinitialize
       >
-        {({ setFieldValue, handleSubmit, values }) => (
+        {({ setFieldValue, handleSubmit }) => (
           <Form className={s.filterForm} onSubmit={handleSubmit}>
             <div className={s.selectGroup}>
               <label className={s.filterLabel}>Car brand</label>
@@ -90,30 +90,20 @@ function FilterPanel({ availableBrands }) {
             <div>
               <label className={s.filterLabel}>Car mileage / km</label>
               <div className={s.rangeInputs}>
-                <div className={s.inputWrapper}>
-                  {values.minMileage && (
-                    <span className={s.inputPrefix}>From </span>
-                  )}
+                <div className={s.fromWrapper}>
+                  <span className={s.fromLabel}>From</span>
                   <Field
                     name="minMileage"
-                    placeholder="From"
-                    className={`${s.rangeField} ${
-                      values.minMileage ? s.withPrefix : ''
-                    }`}
+                    className={s.fromField}
                     type="number"
                     min="0"
                   />
                 </div>
-                <div className={s.inputWrapper}>
-                  {values.maxMileage && (
-                    <span className={s.inputPrefix}>To </span>
-                  )}
+                <div className={s.toWrapper}>
+                  <span className={s.toLabel}>To</span>
                   <Field
                     name="maxMileage"
-                    placeholder="To"
-                    className={`${s.rangeField} ${
-                      values.maxMileage ? s.withPrefix : ''
-                    }`}
+                    className={s.toField}
                     type="number"
                     min="0"
                   />
