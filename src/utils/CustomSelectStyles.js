@@ -73,7 +73,6 @@ export const customSelectStyles = {
     '&::-webkit-scrollbar-thumb:hover': {
       background: '#c1c5cc',
     },
-    // Firefox scrollbar
     scrollbarWidth: 'thin',
     scrollbarColor: '#dadde1 transparent',
   }),

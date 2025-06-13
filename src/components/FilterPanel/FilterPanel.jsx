@@ -65,7 +65,7 @@ function FilterPanel({ availableBrands }) {
                   onChange={option => setFieldValue('selectedBrand', option)}
                   onMenuOpen={() => setIsBrandOpen(true)}
                   onMenuClose={() => setIsBrandOpen(false)}
-                  isClearable
+                  isClearable={false}
                 />
                 <CustomDropdownIndicator isOpen={isBrandOpen} />
               </div>
@@ -82,7 +82,7 @@ function FilterPanel({ availableBrands }) {
                   onMenuClose={() => setIsPriceOpen(false)}
                   components={{ SingleValue: PriceDisplay }}
                   getOptionLabel={option => `${option.value}`}
-                  isClearable
+                  isClearable={false}
                 />
                 <CustomDropdownIndicator isOpen={isPriceOpen} />
               </div>
